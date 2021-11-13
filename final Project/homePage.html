@@ -8,7 +8,7 @@
     <style>
       #mydiv {
         display: flex;
-        /* height: 635px; */
+        height: 100%;
         width: 100%;
       }
       #mydiv > img {
@@ -21,7 +21,7 @@
       #toHomePage {
         position: absolute;
         top: 10%;
-        left: 45%;
+        left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         font-size: 40px;
@@ -53,8 +53,12 @@
       }
       .right,
       .left {
-        width: 48%;
-        /* height: 10%; */
+        width: 50%;
+        height: 660px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
       }
     </style>
   </head>
@@ -63,8 +67,8 @@
       <a id="toHomePage" href="homePage.html"><b>PULL&BEAR</b></a>
       <a id="toWomenPage" href="femaleProduct.html">WOMAN</a>
       <a id="toManPage" href="maleProduct.html">MAN</a>
-      <div class="right"><img src="woman.jpg" alt="Woman Image" /></div>
-      <div class="left"><img src="man.jpg" alt="Man Image" /></div>
+      <div class="right"><img src="woman.jpg" alt="Woman Image" style="height: 100%;"/></div>
+      <div class="left"><img src="man.jpg" alt="Man Image" style="height: 100%;" /></div>
       <!-- <img src="woman.jpg" alt="Woman Image" />
       <img src="man.jpg" alt="Man Image" /> -->
     </div>
