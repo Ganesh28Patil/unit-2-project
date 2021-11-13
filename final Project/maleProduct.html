@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Male | PULL&BEAR Pull Worldwide</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial;
+      }
+      #contain {
+        display: flex;
+      }
+      .mainH {
+        color: black;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-weight: bolder;
+        font-size: 50px;
+      }
+      .imgDS {
+        height: 570px;
+        width: 350px;
+        margin-left: 170px;
+        margin-right: 200px;
+        margin-top: 80px;
+        text-align: center;
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+      }
+      .imgDV {
+        height: 570px;
+        width: 350px;
+        margin-left: 170px;
+        margin-right: 200px;
+        margin-top: 80px;
+        text-align: center;
+      }
+      .imgDB {
+        text-align: bottom;
+        height: 570px;
+        width: 700px;
+        margin-left: 30px;
+        margin-top: 80px;
+        text-align: center;
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+      }
+      #price {
+        font-weight: bolder;
+        font-family: sans-serif;
+      }
+      #txt {
+        font-family: monospace;
+        font-size: 14px;
+      }
+      .hove {
+        margin-top: 500px;
+        /* display: none; */
+      }
+      button {
+        display: inline-block;
+        background-color: black;
+        color: whitesmoke;
+        width: 50%;
+      }
+      select {
+        display: inline-block;
+        width: 48%;
+      }
+      #iDV {
+        height: 570px;
+        width: 350px;
+        margin-left: 170px;
+        margin-right: 200px;
+        margin-top: 80px;
+        text-align: center;
+      }
+      #box {
+        border: 1px red;
+        height: 400px;
+        width: 100%;
+      }
+      .box1 {
+        border: 1px blue;
+        display: inline-block;
+        height: 350px;
+        width: 18.5%;
+        margin-left: 10px;
+        margin-top: 10px;
+        vertical-align: top;
+      }
+      #box2 {
+        width: 34%;
+      }
+      .box3 {
+        border: 1px yellow;
+        height: 30%;
+        margin-top: 5px;
+        width: 100%;
+      }
+      #apps {
+        width: 150px;
+        height: 50px;
+      }
+      #pay {
+        width: 60px;
+        height: 30px;
+      }
+      #social {
+        width: 30px;
+        height: 30px;
+      }
+
+      #upfooter {
+        border: 1px red;
+        width: 600px;
+        height: 250px;
+        margin: auto;
+        text-align: center;
+      }
+      #anchor {
+        margin-top: 60px;
+        font-size: 13px;
+      }
+      #anchor > a {
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+      /*  navBar css */
+      #navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: lightcyan;
+        opacity: initial;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      #navBar > ul {
+        display: flex;
+        margin: 20px;
+        justify-content: space-around;
+        width: 200px;
+        padding: 20px;
+        font-size: 25px;
+      }
+      li {
+        list-style: none;
+      }
+      li > a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navBar">
+      <ul>
+        <li><a href="femaleProduct.html">WOMAN</a></li>
+        <li>|</li>
+        <li><a href="maleProduct.html">MAN</a></li>
+      </ul>
+      <ul>
+        <li><a href="logIn.html">LOG-IN</a></li>
+        <li>|</li>
+        <li><a href="cart.html">CART</a></li>
+      </ul>
+    </div>
+    <div class="mainH">PULL&BEAR</div>
+    <div id="contain">
+      <div id="iDV">
+        <div id="hide" id="hove">
+          <video autoplay loop muted width="100%" style="vertical-align: top">
+            <source
+              src="https://static.pullandbear.net/2/photos//2021/I/0/2/p/8711/589/800/10/8711589800_6_1_1.mp4?t=1636029526586&imwidth=563"
+              type="video/mp4"
+            />
+          </video>
+          <div id="inp"></div>
+        </div>
+        <a id="txt">Starter x Pull & Bear parka</a><br />
+        <a id="price" value='59.99 €'>59.99 €</a>
+      </div>
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8711/588/800/05/8711588800_6_1_8.jpg?t=1636027602292&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt" id="txt">Graphic print hoodie</a><br />
+        <a id="price"" id="price">25.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8711/588/800/04/8711588800_6_1_8.jpg?t=1636027602146&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Graphic print hoodie</a><br />
+        <a id="price">25.99 €</a>
+      </div>
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8591/566/450/03/8591566450_6_1_8.jpg?t=1636027085195&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Graphic print hoodie</a><br />
+        <a id="price">25.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <!--- Second Video --->
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8241/592/250/03/8241592250_6_1_8.jpg?t=1636025982344&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Graphic print hoodie</a><br />
+        <a id="price">25.99 €</a>
+      </div>
+      <div id="iDV">
+        <div id="hide" id="hove">
+          <video autoplay loop muted width="100%" style="vertical-align: top">
+            <source
+              src="https://static.pullandbear.net/2/photos//2021/I/0/2/p/8711/588/800/10/8711588800_6_1_1.mp4?t=1636029506690&imwidth=563"
+              type="video/mp4"
+            />
+          </video>
+          <div id="inp"></div>
+        </div>
+        <a id="txt">Starter x Pull & Bear parka</a><br />
+        <a id="price">59.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8582/502/500/03/8582502500_6_1_8.jpg?t=1636025972210&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Fleece bucket hat</a><br />
+        <a id="price">12.99 €</a>
+      </div>
+      <div
+        class="imgDB"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8843/503/704/02/8843503704_5_1_8.jpg?t=1635856756925&imwidth=1024);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Reset password T-shirt</a><br />
+        <a id="price">17.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8830/532/512/02/8830532512_6_1_8.jpg?t=1635869578623&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Fleece bucket hat</a><br />
+        <a id="price">12.99 €</a>
+      </div>
+      <div
+        class="imgDB"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8242/503/250/03/8242503250_5_1_8.jpg?t=1635869639511&imwidth=1024);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Reset password T-shirt</a><br />
+        <a id="price">17.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8470/907/251/03/8470907251_6_1_8.jpg?t=1635859787654&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Fleece bucket hat</a><br />
+        <a id="price">12.99 €</a>
+      </div>
+      <div
+        class="imgDB"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8591/913/600/02/8591913600_5_1_8.jpg?t=1635859772368&imwidth=1024);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Reset password T-shirt</a><br />
+        <a id="price">17.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <div
+        class="imgDB"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8711/589/800/02/8711589800_5_1_8.jpg?t=1636027881533&imwidth=1024);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">STWD print hoodie</a><br />
+        <a id="price">29.99 €</a>
+      </div>
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8591/558/500/04/8591558500_6_1_8.jpg?t=1636027089789&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Graphic print hoodie</a><br />
+        <a id="price">25.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8591/568/500/03/8591568500_6_1_8.jpg?t=1635870317780&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">STWD print hoodie</a><br />
+        <a id="price">29.99 €</a>
+      </div>
+      <div
+        class="imgDB"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8591/569/800/02/8591569800_5_1_8.jpg?t=1635869645986&imwidth=1024);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Graphic print hoodie</a><br />
+        <a id="price">25.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <div
+        class="imgDB"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8711/545/251/03/8711545251_5_1_8.jpg?t=1635857052913&imwidth=1024);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Graphic print hoodie</a><br />
+        <a id="price">25.99 €</a>
+      </div>
+      <div class="imgDV">
+        <div>
+          <video autoplay loop muted width="100%" style="vertical-align: top">
+            <source
+              src="https://static.pullandbear.net/2/photos//2021/I/0/2/p/9553/507/800/03/9553507800_6_1_1.mp4?t=1635511063866&imwidth=563"
+              type="video/mp4"
+            />
+          </video>
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">Starter x Pull & Bear parka</a><br />
+        <a id="price">59.99 €</a>
+      </div>
+    </div>
+    <div id="contain">
+      <div
+        id="show"
+        class="imgDS"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/0/2/p/8676/709/700/03/8676709700_6_1_8.jpg?t=1635508617379&imwidth=563);
+        "
+      >
+        <div id="hide" class="hove">
+          <select id="size">
+            <option value="default">SIZE</option>
+            <option value="s">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <button id="add">Add</button>
+        </div>
+        <a id="txt">STWD print hoodie</a><br />
+        <a id="price">29.99 €</a>
+      </div>
+      <div
+        class="imgDB"
+        style="
+          background-image: url(https://static.pullandbear.net/2/photos//2021/I/M/2/p/2910/202/163/2910202163_5_1_8.jpg?t=1635508557956&imwidth=1024);
+        "
+      ></div>
+    </div>
+    <div id="upfooter">
+      <h3>Men's Fashion Collection</h3>
+      <p>
+        Update your wardrobe with the key garments for autumn-winter 2021/22.
+        Choose some ripped trousers or joggers and combine them with a
+        sweatshirt, a bomber jacket or a pair of military boots. Discover the
+        must-have and most up-to date garments to create your winter looks.
+      </p>
+      <a style="color: black" href="">See less</a>
+      <div id="anchor">
+        <a href="">TROUSERS</a> | <a href="">SHIRTS</a> |
+        <a href="">JACKETS</a> | <a href="">SWEATSHIRTS</a> |
+        <a href="">SHOES</a>
+      </div>
+    </div>
+    <hr />
+    <div id="box">
+      <div class="box1">
+        <ul>
+          <h3>CUSTOMER SERVICE</h3>
+          <p>Chat</p>
+          <p>WhatsApp</p>
+          <p>Contact</p>
+        </ul>
+      </div>
+      <div class="box1">
+        <ul>
+          <h3>HELP</h3>
+          <p>Exchange and returns</p>
+          <p>Delivery</p>
+          <p>Payment</p>
+          <p>Gift card</p>
+          <p>Gift reciept</p>
+          <p>FAQs</p>
+        </ul>
+      </div>
+      <div class="box1">
+        <ul>
+          <h3>BUSINESS</h3>
+          <p>About us</p>
+          <p>Store location</p>
+          <p>Franchise</p>
+          <p>Work with us</p>
+        </ul>
+      </div>
+      <div id="box2" class="box1">
+        <div class="box3">
+          <h3>OUR APP</h3>
+          <img
+            id="apps"
+            src="https://engineering.purdue.edu/coursemirror/wp-content/uploads/2020/08/appstore.png"
+            alt=""
+          />
+          <img
+            id="apps"
+            src="https://uploads-ssl.webflow.com/5ef0d12f2cdb982e01422324/5fd791a2e1ad8f4361db27f5_image%20163.png"
+            alt=""
+          />
+        </div>
+        <div class="box3">
+          <h3>PAYMENT METHODS</h3>
+          <img
+            id="pay"
+            src="https://mpng.subpng.com/20180330/hte/kisspng-credit-card-visa-debit-card-payment-card-mastercar-visa-5abe350258ad72.7314223215224148503632.jpg"
+            alt=""
+          />
+          <img
+            id="pay"
+            src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_vrt_pos_92px_2x.png"
+            alt=""
+          />
+          <img
+            id="pay"
+            src="https://i.pinimg.com/474x/55/e9/3a/55e93a7ce0199896955b03378227ae2d.jpg"
+            alt=""
+          />
+          <img
+            id="pay"
+            src="https://getlogo.net/wp-content/uploads/2020/03/sofort-logo-vector.png"
+            alt=""
+          />
+          <img
+            id="pay"
+            src="https://static.pullandbear.net/2/static2/itxwebstandard/images/payment/9.svg?20211104021001797292552"
+            alt=""
+          />
+          <img
+            id="pay"
+            src="https://www.pngitem.com/pimgs/m/440-4406974_paypal-logo-png-paypal-logo-icon-png-transparent.png"
+            alt=""
+          />
+          <img
+            id="pay"
+            src="https://static.pullandbear.net/2/static2/itxwebstandard/images/payment/7.svg?20211104021001797292552"
+            alt=""
+          />
+        </div>
+        <div class="box3">
+          <h3>FOLLOW US!</h3>
+          <img
+            id="social"
+            src="https://cdn.icon-icons.com/icons2/2719/PNG/512/instagram_logo_icon_175119.png"
+            alt=""
+          />
+          <img
+            id="social"
+            src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/social-facebook-128.png"
+            alt=""
+          />
+          <img
+            id="social"
+            src="https://cdn.icon-icons.com/icons2/791/PNG/512/TWITTER_icon-icons.com_65486.png"
+            alt=""
+          />
+          <img
+            id="social"
+            src="https://cdn-icons-png.flaticon.com/512/152/152810.png"
+            alt=""
+          />
+          <img
+            id="social"
+            src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/spotify-512.png"
+            alt=""
+          />
+          <img
+            id="social"
+            src="https://www.iconpacks.net/icons/1/free-pinterest-icon-113-thumb.png"
+            alt=""
+          />
+          <img
+            id="social"
+            src="https://cdn.iconscout.com/icon/free/png-256/tiktok-2270636-1891163.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var prodData = [];
+  document.querySelector("#add").addEventListener("click", addFunc);
+
+  function addFunc() {
+    var size = document.getElementById("size").value;
+    var text = document.getElementById("txt").value;
+    var price = document.getElementById("price").value;
+    console.log(size, price, text);
+  }
+</script>

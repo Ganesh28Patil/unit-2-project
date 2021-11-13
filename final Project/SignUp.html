@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign-Up | PULL&BEAR Pull Worldwide</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        /* height: 100px; */
+      }
+      form {
+        margin-top: 130px;
+        justify-content: center;
+        width: 450px;
+        height: 750px;
+        background-color: white;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+      #email,
+      #password {
+        display: block;
+        width: 400px;
+        height: 40px;
+        margin: 80px;
+        margin-left: 20px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+      }
+      button,
+      #btn {
+        width: 350px;
+        height: 60px;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+        display: inline-flex;
+      }
+      span {
+        content: "\2190";
+        display: inline-flex;
+
+        margin-left: 0px;
+        font-size: 30px;
+      }
+
+      #maindiv {
+        display: flex;
+        justify-content: space-between !important;
+
+        padding: 20px;
+
+        width: 80%;
+        margin: auto;
+      }
+
+      #heading {
+        justify-content: space-evenly;
+        margin: auto;
+        padding: 20px;
+      }
+      #span1 {
+        padding-left: 0px;
+        padding-right: 65px;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      #span2 {
+        margin-right: 0px;
+        padding-left: 65px;
+        text-decoration: none;
+        font-size: 30px;
+      }
+
+      input.switch:empty ~ label:before {
+        content: "2718";
+        text-indent: 2.4em;
+        color: #900;
+      }
+      input.switch:checked ~ label:before {
+        content: "2714";
+        text-indent: 0.5em;
+        color: #6f6;
+      }
+      #para {
+        text-align: center;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-style: italic;
+      }
+      #privatepolicy {
+        text-align: center;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-style: italic;
+      }
+      #span3 {
+        font-size: 20px;
+        font-style: italic;
+      }
+
+      #checkBox {
+        height: 25px;
+        width: 25px;
+      }
+      #navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: lightcyan;
+        opacity: initial;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      #navBar > ul {
+        display: flex;
+        margin: 20px;
+        justify-content: space-between;
+        width: 200px;
+        padding: 20px;
+        font-size: 25px;
+      }
+      li {
+        list-style: none;
+      }
+      li > a {
+        text-decoration: none;
+      }
+      img {
+        margin-top: 50px;
+        background-size: cover;
+        width: 70%;
+        height: 745px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navBar">
+      <ul>
+        <li><a href="femaleProduct.html">WOMAN</a></li>
+        <li>|</li>
+        <li><a href="maleProduct.html">MAN</a></li>
+      </ul>
+      <ul>
+        <li><a href="logIn.html">LOG-IN</a></li>
+        <li>|</li>
+        <li><a href="cart.html">CART</a></li>
+      </ul>
+    </div>
+    <img src="grayMan.jpg" alt="img1" />
+    <form id="main">
+      <div id="heading">
+        <a href="https://www.pullandbear.com/ww/woman-n6417" id="span1"
+          >&#8592;</a
+        >
+
+        <h1>CREATE ACCOUNT</h1>
+        <a href="https://www.pullandbear.com/ww/woman-n6417" id="span2"
+          >&#10005;</a
+        >
+      </div>
+
+      <input id="email" type="text" name="" placeholder="Email address" />
+
+      <input id="password" type="password" name="" placeholder="password" />
+      <div id="maindiv">
+        <p>Stay logged in</p>
+        <input type="checkbox" id="checkBox" name="radio" class="switch" />
+      </div>
+      <div id="para">
+        <input type="radio" name="" id="rd1" />
+        I want to receive news and customised commercial communications from
+        of<br />
+        PULL&BEAR via email and other means
+      </div>
+      <div id="privatepolicy">
+        <input type="radio" name="" id="rd2" />
+        I have been able to read and understand<br />
+        the information on the use of<br />
+        my personal data explained in the
+        <span id="span3"><b>Privacy policy</b></span>
+      </div>
+
+      <input id="btn" type="submit" value="CREATE ACCOUNT" />
+    </form>
+  </body>
+  <script>
+    document.querySelector("#btn").addEventListener("click", signUpFun);
+    var data = JSON.parse(localStorage.getItem("userData")) || [];
+    function signUpFun() {
+      // event.preventDefault();
+      var list = {
+        email: main.email.value,
+        password: main.password.value,
+        chk: main.checkBox.value,
+        rdd1: main.rd1.value,
+        rdd2: main.rd2.value,
+      };
+
+      // console.log(list);
+      data.push(list);
+      localStorage.setItem("userData", JSON.stringify(data));
+      console.log(data);
+
+      alert("Account Created, Enjoy Your Shopping");
+
+      // console.log((window.location.href = "logIn.html"));
+
+      window.location.href = "logIn.html";
+    }
+  </script>
+</html>

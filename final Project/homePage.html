@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next | PULL&BEAR Pull Worldwide</title>
+    <style>
+      #mydiv {
+        display: flex;
+        /* height: 635px; */
+        width: 100%;
+      }
+      #mydiv > img {
+        height: 705px;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+      }
+
+      #toHomePage {
+        position: absolute;
+        top: 10%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 40px;
+        text-decoration: none;
+      }
+
+      #toWomenPage {
+        position: absolute;
+        top: 42%;
+        left: 16%;
+        color: white;
+        font-size: 60px;
+        rotate: 180px;
+        transform: rotate(90deg);
+        text-decoration: none;
+        /* border:  10px solid red; */
+      }
+
+      #toManPage {
+        position: absolute;
+        top: 40%;
+        right: 21%;
+        color: white;
+        font-size: 60px;
+        rotate: 180px;
+        transform: rotate(90deg);
+        text-decoration: none;
+        /* border:  10px solid green; */
+      }
+      .right,
+      .left {
+        width: 48%;
+        /* height: 10%; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv">
+      <a id="toHomePage" href="homePage.html"><b>PULL&BEAR</b></a>
+      <a id="toWomenPage" href="femaleProduct.html">WOMAN</a>
+      <a id="toManPage" href="maleProduct.html">MAN</a>
+      <div class="right"><img src="woman.jpg" alt="Woman Image" /></div>
+      <div class="left"><img src="man.jpg" alt="Man Image" /></div>
+      <!-- <img src="woman.jpg" alt="Woman Image" />
+      <img src="man.jpg" alt="Man Image" /> -->
+    </div>
+  </body>
+</html>

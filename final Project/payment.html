@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment</title>
+    <style>
+      #form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+        background-color: blue;
+        color: white;
+        height: 550px;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 5px;
+      }
+      #submit {
+        height: 30px;
+      }
+      #navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: lightcyan;
+        opacity: initial;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      #navBar > ul {
+        display: flex;
+        margin: 20px;
+        justify-content: space-around;
+        width: 200px;
+        padding: 20px;
+        font-size: 25px;
+      }
+      li {
+        list-style: none;
+      }
+      li > a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navBar">
+      <ul>
+        <li><a href="femaleProduct.html">WOMAN</a></li>
+        <li>|</li>
+        <li><a href="maleProduct.html">MAN</a></li>
+      </ul>
+      <ul>
+        <li><a href="logIn.html">LOG-IN</a></li>
+        <li>|</li>
+        <li><a href="cart.html">CART</a></li>
+      </ul>
+    </div>
+    <center><h1>Have an easy Payment</h1></center>
+
+    <form id="form">
+      <label>Card Number</label>
+      <input
+        id="cardNum"
+        type="number"
+        placeholder="Enter 12 digit Card Number"
+      />
+      <label>CVV</label>
+      <input id="cvv" type="password" placeholder="Enter 3 didgit CVV" />
+      <label>Expiry Date of Your Card</label>
+      <input id="expDate" type="date" placeholder="Expiry Date of Card" />
+      <label> Name On Card</label>
+      <input id="name" type="text" placeholder="Enter Name Printed on Card" />
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+  <script>
+    var dataBase = [
+      {
+        cardNumber: "112233445566",
+        cvv: "753",
+        date: "2022-12-12",
+        // name: "Ganesh",
+      },
+      {
+        cardNumber: "114477885522",
+        cvv: "951",
+        date: "2028-09-22",
+        // name: "Rahul",
+      },
+      {
+        cardNumber: "336699885522",
+        cvv: "159",
+        date: "2023-10-22",
+        // name: "Sachin",
+      },
+      {
+        cardNumber: "778899445566",
+        cvv: "357",
+        date: "2024-01-01",
+        // name: "Wahid",
+      },
+    ];
+    document.querySelector("form").addEventListener("submit", goPay);
+
+    function goPay(event) {
+      event.preventDefault();
+      var count = 0;
+      var data = {
+        cardNumber: form.cardNum.value,
+        cvv: form.cvv.value,
+        date: form.expDate.value,
+        name: form.name.value,
+      };
+
+      //   console.log("data", typeof data.name);
+      //   console.log(data.name == "" );
+      if (
+        data.cardNumber == "" ||
+        data.cvv == "" ||
+        data.date == "" ||
+        data.name == ""
+      ) {
+        alert("ERROR, Please Fill all the credentail's");
+        count++;
+      }
+
+      for (var i = 0; i < dataBase.length; i++) {
+        if (
+          data.cardNumber == dataBase[i].cardNumber &&
+          data.cvv == dataBase[i].cvv &&
+          data.date == dataBase[i].date
+        ) {
+          count++;
+          window.location.href = "otp.html";
+        }
+      }
+      if (count == 0) {
+        alert("Incorrect Credential's");
+      }
+    }
+
+    //   localStorage.setItem("",JSON.stringify(credData));
+  </script>
+</html>

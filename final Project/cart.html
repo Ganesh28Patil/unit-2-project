@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        /* height: 100px; */
+      }
+      form {
+        margin-top: 50px;
+        justify-content: center;
+        width: 450px;
+        height: 750px;
+        background-color: white;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        padding-bottom: 20px;
+      }
+
+      button {
+        width: 350px;
+        height: 60px;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+        display: inline-flex;
+      }
+
+      #maindiv {
+        display: flex;
+        justify-content: space-between !important;
+        padding: 20px;
+        width: 80%;
+        margin: auto;
+      }
+
+      #heading {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        padding: 20px;
+      }
+      #heading > button {
+        margin: 1%;
+      }
+
+      #span2 {
+        margin-right: 0px;
+        padding-left: 65px;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      #navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: lightcyan;
+        opacity: initial;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      #navBar > ul {
+        display: flex;
+        margin: 20px;
+        justify-content: space-between;
+        width: 200px;
+        padding: 20px;
+        font-size: 25px;
+      }
+      li {
+        list-style: none;
+      }
+      li > a {
+        text-decoration: none;
+      }
+      img {
+        margin-top: 50px;
+        background-size: cover;
+        width: 70%;
+        height: 745px;
+      }
+
+      #para {
+        text-align: center;
+        font-size: 13px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+      }
+      #privatepolicy {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-style: italic;
+      }
+
+      #cross {
+        background-color: transparent;
+        border: none;
+      }
+      #babyimg {
+        height: 15%;
+        width: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navBar">
+      <ul>
+        <li><a href="femaleProduct.html">WOMAN</a></li>
+        <li>|</li>
+        <li><a href="maleProduct.html">MAN</a></li>
+      </ul>
+      <ul>
+        <li><a href="logIn.html">LOG-IN</a></li>
+        <li>|</li>
+        <li><a href="cart.html">CART</a></li>
+      </ul>
+    </div>
+    <img src="grayMan.jpg" alt="img1" />
+    <form id="main">
+      <div id="heading">
+        <button>SHOPING BAG</button>
+        <button>WISHLIST</button>
+        <button id="cross">
+          <a href="https://www.pullandbear.com/ww/woman-n6417" id="span2"
+            >&#10005;</a
+          >
+        </button>
+      </div>
+
+      <div id="maindiv"></div>
+      <img
+        id="babyimg"
+        src="https://static.pullandbear.net/2/static2/itxwebstandard/images/icons/shopcart-box.png?t=20211112032937"
+      />
+      <div id="privatepolicy">
+        <b> YOUR WISHLIST IS EMPTY.</b>
+      </div>
+      <div id="para">
+        Check if there are any products in your<br />
+        basket and snatch them up before<br />
+        they’re gone!<br />
+
+        You can also check out the latest<br />
+        arrivals ;)
+      </div>
+
+      <button type="submit">VIEW BASKET</button>
+      <button type="submit">VIEW NEW ARRIVALS</button>
+    </form>
+  </body>
+</html>
