@@ -207,8 +207,8 @@
   <script>
     document.querySelector("#btn").addEventListener("click", signUpFun);
     var data = JSON.parse(localStorage.getItem("userData")) || [];
-    function signUpFun() {
-      // event.preventDefault();
+    function signUpFun(event) {
+      event.preventDefault();
       var list = {
         email: main.email.value,
         password: main.password.value,

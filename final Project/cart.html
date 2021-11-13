@@ -167,8 +167,15 @@
         arrivals ;)
       </div>
 
-      <button type="submit">VIEW BASKET</button>
+      <button onclick="nextPage(event)">VIEW BASKET</button>
       <button type="submit">VIEW NEW ARRIVALS</button>
     </form>
   </body>
+  <script>
+    function nextPage(event) {
+      event.preventDefault();
+      window.location.href = "payment.html";
+      // console.log("hello");
+    }
+  </script>
 </html>
